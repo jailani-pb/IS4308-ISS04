@@ -1,0 +1,18 @@
+Label, TextField, Button, PasswordField {
+	-fx-min-height: 80;
+	-fx-max-height: 80;
+	-fx-font-size: 20;
+}
+
+.align-center {
+	-fx-alignment: center;
+}
+
+.title {
+	-fx-font-size: 50;
+}
+
+.login-field {
+	-fx-min-width: 200;
+	-fx-max-width: 200;
+}

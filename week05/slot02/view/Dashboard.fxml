@@ -1,0 +1,8 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" 
+		fx:controller="week05.slot02.controller.DashboardController">
+	<Label fx:id="welcomeLabel" text="Welcome" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+</GridPane>
