@@ -1,0 +1,27 @@
+.input-label {
+	-fx-min-width: 100;
+	-fx-max-width: 100;
+	-fx-min-height: 32;
+	-fx-max-height: 32;
+}
+
+.input-field {
+	-fx-min-width: 200;
+	-fx-max-width: 200;
+	-fx-min-height: 32;
+	-fx-max-height: 32;
+}
+
+.btn {
+	-fx-min-width: 300;
+	-fx-max-width: 300;
+	-fx-min-height: 32;
+	-fx-max-height: 32;
+}
+
+.list-view {
+	-fx-min-width: 300;
+	-fx-max-width: 300;
+	-fx-min-height: 288;
+	-fx-max-height: 288;
+}

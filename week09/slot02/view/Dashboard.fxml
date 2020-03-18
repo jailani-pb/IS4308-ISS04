@@ -1,0 +1,66 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" 
+		fx:controller="week09.slot02.controller.DashboardController">
+	<stylesheets>
+		<URL value="@dashboard.css" />
+	</stylesheets>
+	<Label fx:id="welcomeLabel" text="Welcome" GridPane.columnSpan="3"
+			GridPane.columnIndex="0" GridPane.rowIndex="0" />
+	<!-- Student ID -->
+	<Label text="ID" styleClass="input-label" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+	<TextField fx:id="idTextField" styleClass="input-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+	
+	<!-- Student First name -->
+	<Label text="First name" styleClass="input-label" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+	<TextField fx:id="firstNameTextField" styleClass="input-field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+	
+	<!-- Student Last name -->	
+	<Label text="Last name" styleClass="input-label" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+	<TextField fx:id="lastNameTextField" styleClass="input-field" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+	
+	<!-- Student IC Number -->	
+	<Label text="IC Number" styleClass="input-label" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+	<TextField fx:id="icNumberTextField" styleClass="input-field" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+	
+	<!-- Student IC Colour -->	
+	<Label text="IC Colour" styleClass="input-label" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+	<ComboBox fx:id="icColourComboBox" styleClass="input-field" GridPane.columnIndex="1" GridPane.rowIndex="5">
+		<items>
+			<FXCollections fx:factory="observableArrayList">
+				<String fx:value="Yellow" />
+				<String fx:value="Red/Purple" />
+				<String fx:value="Green" />
+			</FXCollections>
+		</items>
+	</ComboBox>
+	
+	<!-- Student Gender -->	
+	<Label text="Gender" styleClass="input-label" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+	<fx:define>
+		<ToggleGroup fx:id="genderToggleGroup" />
+	</fx:define>
+	<RadioButton fx:id="maleRadioButton" styleClass="input-field" text="Male" selected="true" toggleGroup="$genderToggleGroup" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+	<RadioButton fx:id="femaleRadioButton" styleClass="input-field" text="Female" toggleGroup="$genderToggleGroup" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+	
+	<!-- Student Active -->	
+	<Label text="Active?" styleClass="input-label" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+	<CheckBox fx:id="activeCheckBox" styleClass="input-field" selected="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+	
+	<Button onAction="#addStudent" styleClass="btn" text="Add" GridPane.columnSpan="2" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+	<Button styleClass="btn" text="Edit" GridPane.columnSpan="2" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+	
+	<ListView fx:id="studentsListView" styleClass="list-view" GridPane.rowSpan="9" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+	<Button onAction="#deleteStudent" styleClass="btn" text="Delete" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+</GridPane>
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<VBox styleClass="align-center" 
+		xmlns:fx="http://javafx.com/fxml" 
+		fx:controller=
+			"week09.slot02.controller.LoginController">
+	<stylesheets>
+		<URL value="@app.css" />
+	</stylesheets>
+	<Label styleClass="title" text="Login Page"/>
+	<HBox styleClass="align-center">
+		<Label styleClass="login-field" text="Username" />
+		<TextField styleClass="login-field"
+				fx:id="usernameTextField" onAction="#submit" />
+	</HBox>
+	<HBox styleClass="align-center">
+		<Label styleClass="login-field" text="Password" />
+		<PasswordField styleClass="login-field" 
+				fx:id="passwordPasswordField" onAction="#submit" />
+	</HBox>
+	<HBox styleClass="align-center">
+		<Button styleClass="login-field" text="Clear" 
+			onAction="#clear" />
+		<Button styleClass="login-field" text="Submit" 
+			onAction="#submit" />
+	</HBox>
+	<Label fx:id="errorLabel" />
+</VBox>
