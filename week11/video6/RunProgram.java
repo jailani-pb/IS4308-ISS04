@@ -10,7 +10,7 @@ public class RunProgram extends Application {
 
 	@Override
 	public void start(Stage arg0) throws Exception {
-		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("./view/Dashboard.fxml"));
+		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("./view/Login.fxml"));
 		Parent root = fxmlLoader.load();
 		Scene scene = new Scene(root, 800, 600);
 		arg0.setTitle("Login Page");
