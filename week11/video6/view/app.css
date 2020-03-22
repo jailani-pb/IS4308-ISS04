@@ -1,0 +1,141 @@
+// Width
+.w-85 {
+	-fx-min-width: 85;
+	-fx-max-width: 85;
+}
+
+.w-90 {
+	-fx-min-width: 90;
+	-fx-max-width: 90;
+}
+
+.w-95 {
+	-fx-min-width: 95;
+	-fx-max-width: 95;
+}
+
+.w-100 {
+	-fx-min-width: 100;
+	-fx-max-width: 100;
+}
+
+.w-150 {
+	-fx-min-width: 150;
+	-fx-max-width: 150;
+}
+
+.w-200 {
+	-fx-min-width: 200;
+	-fx-max-width: 200;
+}
+
+.w-250 {
+	-fx-min-width: 250;
+	-fx-max-width: 250;
+}
+
+.w-290 {
+	-fx-min-width: 290;
+	-fx-max-width: 290;
+}
+
+.w-295 {
+	-fx-min-width: 295;
+	-fx-max-width: 295;
+}
+
+.w-300 {
+	-fx-min-width: 300;
+	-fx-max-width: 300;
+}
+
+// Height
+.h-30 {
+	-fx-min-height: 30;
+	-fx-max-height: 30;
+}
+
+// Font size
+.text-lg {
+	-fx-font-size: 1.125em;
+}
+
+.text-xl {
+	-fx-font-size: 1.25em;
+}
+
+.text-5xl {
+	-fx-font-size: 3em;
+}
+
+// Font Style
+.text-bold {
+	-fx-font-weight: bold;
+}
+
+.text-underline {
+	-fx-underline: true;
+}
+
+// Spacing
+.spacing-5 {
+	-fx-spacing: 5;
+}
+
+.spacing-10 {
+	-fx-spacing: 10;
+}
+
+// Gap
+.hgap-10 {
+	-fx-hgap: 10;
+}
+
+.vgap-10 {
+	-fx-vgap: 10;
+}
+
+// Alignment
+.align-center {
+    -fx-alignment: center;
+}
+
+// Text Colour
+.text-white {
+    -fx-text-fill: white;
+}
+
+// Background Colour
+.bg-gray {
+    -fx-background-color: lightslategray;
+}
+
+.bg-darkgray {
+	-fx-background-color: slategray;
+}
+
+// Background with Hover
+.bg-gray-hover {
+    -fx-background-color: lightslategray;
+}
+
+.bg-gray-hover:hover {
+    -fx-background-color: gray;
+}
+
+// Border
+.border-none {
+    -fx-border: none;
+}
+
+.pt-25 {
+	-fx-padding: 25 0 0 0;
+}
+
+.p-20 {
+	-fx-padding: 20;
+}
+
+.py-10 {
+	-fx-padding: 10 0 10 0;
+}

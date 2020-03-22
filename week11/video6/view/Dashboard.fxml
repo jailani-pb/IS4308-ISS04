@@ -1,0 +1,28 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+
+<BorderPane styleClass="align-center, spacing-10" xmlns:fx="http://javafx.com/fxml" fx:controller=
+			"week11.video6.controller.DashboardController">
+	<stylesheets>
+		<URL value="@app.css" />
+	</stylesheets>
+	<top>
+		<Label minWidth="800" maxWidth="800" styleClass="text-xl, text-bold, align-center, bg-darkgray, text-white, py-10" text="Welcome"/>
+	</top>
+	<left>
+		<VBox styleClass="w-150, bg-gray">
+			<Label styleClass="w-150, text-white, text-xl, text-bold, text-underline, align-center, pt-25" text="Menu"/>
+			<Button onAction="#employeePage" styleClass="w-150, bg-gray-hover, border-none, text-white, py-10" text="Employee"/>
+			<Button onAction="#departmentPage" styleClass="w-150, bg-gray-hover, border-none, text-white, py-10" text="Department"/>
+			<Button onAction="#appraisalPage" styleClass="w-150, bg-gray-hover, border-none, text-white, py-10" text="Appraisal"/>
+			<Button onAction="#workAtPage" styleClass="w-150, bg-gray-hover, border-none, text-white, py-10" text="Work At"/>
+		</VBox>
+	</left>
+	<center>
+		<ScrollPane fx:id="scrollPane">
+			<fx:include source="Employee.fxml" />
+		</ScrollPane>
+	</center>
+</BorderPane>
