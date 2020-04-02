@@ -1,0 +1,26 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane styleClass="p-20, text-lg, vgap-10, hgap-10" xmlns:fx="http://javafx.com/fxml" fx:controller=
+			"week12.video12.controller.DepartmentController">
+	<Label fx:id="headerLabel" styleClass="text-xl, text-bold, text-underline" text="Department Management" GridPane.columnSpan="3"
+			GridPane.columnIndex="0" GridPane.rowIndex="0" />
+	<!-- ID -->
+	<Label text="ID" styleClass="w-90, h-30" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+	<TextField fx:id="idTextField" disable="true" styleClass="w-200, h-30" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+	
+	<!-- Name -->
+	<Label text="Name" styleClass="w-90, h-30" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+	<TextField fx:id="nameTextField" styleClass="w-200, h-30" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+	
+	<!-- Description -->	
+	<Label text="Description" styleClass="w-90, h-30" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+	<TextField fx:id="descriptionTextField" styleClass="w-200, h-30" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+	
+	<Button styleClass="w-300, h-30" text="Add" GridPane.columnSpan="2" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+	<Button styleClass="w-300, h-30" text="Cancel Edit" visible="false" GridPane.columnSpan="2" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+	
+	<ListView fx:id="departmentsListView" minHeight="110" maxHeight="110" styleClass="w-295" GridPane.rowSpan="3" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+	<Button styleClass="w-295, h-30" text="Delete" disable="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+	<Button styleClass="w-295, h-30" text="Edit" disable="true" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+</GridPane>

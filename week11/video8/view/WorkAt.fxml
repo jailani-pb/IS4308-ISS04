@@ -1,0 +1,21 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.util.Calendar?>
+
+<GridPane styleClass="p-20, text-lg, vgap-10, hgap-10" xmlns:fx="http://javafx.com/fxml" fx:controller=
+			"week11.video8.controller.AppraisalController">
+	<Label styleClass="text-xl, text-bold, text-underline" text="Work At" GridPane.columnSpan="3"
+			GridPane.columnIndex="0" GridPane.rowIndex="0" />
+	<Label text="Choose Department:" GridPane.columnSpan="3"
+			GridPane.columnIndex="0" GridPane.rowIndex="1" />
+	<ComboBox minWidth="600" maxWidth="600" styleClass="h-30" GridPane.columnSpan="3" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+	
+	<Label text="Department's Employees" GridPane.columnSpan="3"
+			GridPane.columnIndex="0" GridPane.rowIndex="3"  />
+	<ListView minHeight="310" maxHeight="310" styleClass="w-250" GridPane.rowSpan="2" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+	<Button styleClass="w-85, h-30" text="&lt;&lt;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+	<Button styleClass="w-85, h-30" text="&gt;&gt;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+	<Label text="Not Department's Employees" GridPane.columnSpan="3"
+			GridPane.columnIndex="2" GridPane.rowIndex="3"  />
+	<ListView minHeight="310" maxHeight="310" styleClass="w-250" GridPane.rowSpan="2" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+</GridPane>

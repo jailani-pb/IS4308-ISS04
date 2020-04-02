@@ -1,0 +1,30 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.util.Calendar?>
+
+<GridPane styleClass="p-20, text-lg, vgap-10, hgap-10" xmlns:fx="http://javafx.com/fxml" fx:controller=
+			"week12.video12.controller.AppraisalController">
+	<Label styleClass="text-xl, text-bold, text-underline" text="Employee Appraisal" GridPane.columnSpan="3"
+			GridPane.columnIndex="0" GridPane.rowIndex="0" />
+	<TextField styleClass="w-90, h-30" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+	<Button text="Search by Emp ID" styleClass="w-200, h-30" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+	<ComboBox styleClass="w-295, h-30" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+	<!-- ID -->
+	<Label text="ID" styleClass="w-90, h-30" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+	<TextField disable="true" styleClass="w-200, h-30" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+	
+	<!-- Year -->
+	<Label text="Year" styleClass="w-90, h-30" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+	<Spinner styleClass="w-200, h-30" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+	
+	<!-- Score -->	
+	<Label text="Score" styleClass="w-90, h-30" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+	<TextField styleClass="w-200, h-30" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+	
+	<Button styleClass="w-300, h-30" text="Add" GridPane.columnSpan="2" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+	<Button styleClass="w-300, h-30" text="Cancel Edit" visible="false" GridPane.columnSpan="2" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+	
+	<ListView minHeight="110" maxHeight="110" styleClass="w-295" GridPane.rowSpan="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+	<Button styleClass="w-295, h-30" text="Delete" disable="true" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+	<Button styleClass="w-295, h-30" text="Edit" disable="true" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+</GridPane>

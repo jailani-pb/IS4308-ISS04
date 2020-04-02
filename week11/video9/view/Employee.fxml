@@ -1,0 +1,56 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane styleClass="p-20, text-lg, vgap-10, hgap-10" xmlns:fx="http://javafx.com/fxml" fx:controller=
+			"week11.video9.controller.EmployeeController">
+	<Label styleClass="text-xl, text-bold, text-underline" text="Employee Management" GridPane.columnSpan="3"
+			GridPane.columnIndex="0" GridPane.rowIndex="0" />
+	<!-- ID -->
+	<Label text="ID" styleClass="w-90, h-30" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+	<TextField styleClass="w-200, h-30" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+	
+	<!-- Full name -->
+	<Label text="Full name" styleClass="w-90, h-30" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+	<TextField styleClass="w-200, h-30" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+	
+	<!-- IC Number -->	
+	<Label text="IC Number" styleClass="w-90, h-30" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+	<TextField styleClass="w-200, h-30" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+	
+	<!-- Start Date -->	
+	<Label text="Start Date" styleClass="w-90, h-30" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+	<DatePicker styleClass="w-200, h-30" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+	
+	<!-- Salary -->	
+	<Label text="Salary" styleClass="w-90, h-30" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+	<TextField styleClass="w-200, h-30" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+	
+	<!-- Address -->	
+	<Label text="Address" styleClass="w-90, h-30" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+	<TextField styleClass="w-200, h-30" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+	
+	<!-- Post Code -->	
+	<Label text="Post Code" styleClass="w-90, h-30" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+	<TextField styleClass="w-200, h-30" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+	
+	<!-- Country -->	
+	<Label text="Country" styleClass="w-90, h-30" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+	<TextField styleClass="w-200, h-30" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+	
+	<Button styleClass="w-300, h-30" text="Add" GridPane.columnSpan="2" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+	<Button styleClass="w-300, h-30" text="Cancel Edit" visible="false" GridPane.columnSpan="2" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+	
+	<ListView minHeight="310" maxHeight="310" styleClass="w-290" GridPane.rowSpan="8" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+	<Button styleClass="w-290, h-30" text="Delete" disable="true" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+	<Button styleClass="w-290, h-30" text="Edit" disable="true" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+	
+	<Label styleClass="text-xl, text-bold, text-underline" text="Appraisals" GridPane.columnSpan="2"
+			GridPane.columnIndex="0" GridPane.rowIndex="11" />
+	<ListView minHeight="310" maxHeight="310" styleClass="w-300" GridPane.columnSpan="2" GridPane.columnIndex="0" GridPane.rowIndex="12" />
+	<Button styleClass="w-300, h-30" text="Delete Appraisal" disable="true" GridPane.columnSpan="2" GridPane.columnIndex="0" GridPane.rowIndex="13" />
+	
+	<Label styleClass="text-xl, text-bold, text-underline" text="Work At"
+			GridPane.columnIndex="2" GridPane.rowIndex="11" />
+	<ListView minHeight="310" maxHeight="310" styleClass="w-290" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+	<Button styleClass="w-290, h-30" text="Delete Department" disable="true" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+</GridPane>
